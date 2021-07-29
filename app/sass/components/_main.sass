@@ -1,0 +1,112 @@
+@import "vars"
+
+.main
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	margin-top: -132px
+	.hbWrapper
+		min-height: 884px
+		position: relative
+	&-info
+		position: absolute
+		top: 355px
+		right: 150px
+		max-width: 330px
+	&-title
+		display: block
+		font-size: 70px
+		line-height: 1.1
+		font-weight: normal
+		color: #fff
+		text-transform: uppercase
+		margin: 0 0 15px
+	&-text,&-mob
+		display: none
+		img,svg
+			display: block
+
+@media only screen and (max-width : 1280px)
+	.main
+		background-repeat: no-repeat
+		background-position: 50% 0%
+		background-size: cover
+		margin-top: -100px
+		.hbWrapper
+			min-height: 700px
+		&-info
+			top: 280px
+
+@media only screen and (max-width : 1150px)
+	.main
+		background-position: 75% 0%
+		.hbWrapper
+			min-height: 600px
+		&-info
+			max-width: 300px
+			top: 250px
+			right: 205px
+		&-title
+			font-size: 60px
+
+@media only screen and (max-width : 991px)
+	.header
+		position: fixed
+		width: 100%
+		background-color: #00b8f1
+	.main
+		margin: 0
+		background-position: 55% 0%
+		&-info
+			right: 50px
+
+@media only screen and (max-width : 768px)
+	.main
+		background: none!important
+		.hbWrapper
+			min-height: 1204px
+		&-text
+			position: absolute
+			top: 125px
+			left: 33px
+			z-index: 5
+		&-text,&-mob
+			display: block
+		&-mob
+			position: absolute
+			bottom: -10%
+			left: 0
+			width: 100%
+			img,svg
+				width: 100%
+		&-info
+			top: 255px
+			left: 114px
+			right: auto
+			z-index: 10
+
+@media only screen and (max-width : 640px)
+	.main
+		&-mob
+			bottom: 0
+
+@media only screen and (max-width : 540px)
+	.main
+		.hbWrapper
+			min-height: 1096px
+		&-title
+			font-size: 49px
+			max-width: 240px
+
+@media only screen and (max-width : 420px)
+	.main
+		.hbWrapper
+			min-height: 896px
+
+@media only screen and (max-width : 380px)
+	.main
+		&-text
+			left: 20px
+		&-info
+			left: auto
+			right: 20px

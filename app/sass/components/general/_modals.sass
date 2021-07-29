@@ -1,0 +1,155 @@
+@import "vars"
+
+.popup
+	&-btnsList
+		padding: 50px 20px
+		li
+			display: block
+			width: auto
+			padding: 0 0 10px
+			a
+				display: inline-block
+				background-color: #F7941D
+				padding: 10px 25px
+				font-size: 14px
+				line-height: 20px
+				color: #fff
+				border-radius: 20px
+	&__title
+		line-height: 1.1
+	&__inner
+		width: 100%
+		form
+			padding: 36px 30px
+	&-info
+		text-align: center
+		padding: 20px 0 0
+		p
+			font-size: 16px
+			line-height: 19px
+			color: #fff
+			max-width: 190px
+			margin: 0 auto 10px
+	&-link
+		display: inline-block
+		font-family: 'MDLZ BITE TYPE'
+		font-size: 20px
+		line-height: 1.2
+		color: #fff
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&-checkbox
+		text-align: left
+		padding-top: 26px
+		.checkbox
+			p
+				text-align: left
+				margin: 0
+	&-bottom
+		.btn
+			margin-top: 25px
+	&-list
+		li
+			font-size: 16px
+			line-height: 19px
+			color: #fff
+			padding-bottom: 19px
+			&:last-child
+				padding-bottom: 10px
+	.file
+		.btn
+			width: 280px
+			height: 49px
+	&-text
+		font-size: 16px
+		line-height: 19px
+		color: #fff
+		text-align: center
+		padding-bottom: 21px
+	&-descr
+		font-size: 24px
+		line-height: 1.2
+		color: #fff
+	&-buttons
+		text-align: center
+		.btn
+			margin-bottom: 20px
+	&.popup-signUp
+		.popup__wrap
+			padding: 50px 58px 104px
+	&.popup-loadingCheck
+		.popup__wrap
+			padding: 50px 50px 80px
+	&.popup-signUpPassed
+		.popup__wrap
+			padding: 50px 50px 80px
+			form
+				padding: 60px 50px
+	&.popup-thanks
+		.popup__wrap
+			padding-bottom: 60px
+			form
+				padding: 40px 20px
+
+.inputs
+	&-row,&-all
+		display: flex
+		flex-flow: row nowrap
+	&-all
+		margin: 0 -12px
+	&-col
+		width: 100%
+		&__small
+			min-width: 116px
+			width: 116px
+			margin-right: 10px
+	&-50
+		width: 50%
+		padding: 0 12px
+	
+.check
+	&-img
+		img,svg
+			display: block
+			max-width: 213px
+			margin: 0 auto
+	&-buttons
+		.btn
+			display: block
+			max-width: 280px
+			width: 100%
+			margin: 25px auto 0
+
+@media only screen and (max-width : 520px)
+	.popup
+		&__title
+			font-size: 50px
+		&__wrap
+			padding: 40px 20px
+		&__inner
+			form
+				max-width: 320px
+				margin: 0 auto
+				padding: 25px 15px
+		&.popup-signUp
+			.popup
+				&__wrap
+					padding: 40px 20px
+		&.popup-loadingCheck
+			.popup
+				&__wrap
+					padding: 40px 20px
+					.file
+						.btn
+							width: 250px
+							font-size: 28px
+		&.popup-signUpPassed
+			.popup__wrap
+				padding: 40px 20px
+				form
+					padding: 20px
+		&.popup-thanks
+			.popup__wrap
+				padding-bottom: 40px

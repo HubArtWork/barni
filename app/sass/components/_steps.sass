@@ -1,0 +1,334 @@
+@import "vars"
+
+.steps
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 100% 100%
+	margin-top: -24px
+	padding: 254px 0 145px
+	position: relative
+	z-index: 10
+	&-mob
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 100% 100%
+	&-bg,&-line
+		position: absolute
+		img,svg
+			display: block
+	&-bg
+		z-index: 2
+		&__1
+			top: 0
+			right: 0
+		&__2
+			bottom: 171px
+			left: 86px
+		&__3
+			bottom: 164px
+			right: 123px
+	&-line
+		&__1
+			width: 1161px
+			top: -144px
+			right: 202px
+		&__2
+			width: 753px
+			top: -87px
+			left: 612px
+		&__3
+			width: 1128px
+			top: -255px
+			right: 237px
+		&__4
+			width: 753px
+			top: -249px
+			left: 632px
+	.hbWrapper
+		max-width: 810px
+		margin: 0 auto
+	&-tit
+		display: block
+		font-size: 13px
+		line-height: 15.6px
+		color: #fff
+	&-item
+		display: flex
+		flex-flow: row nowrap
+		//align-items: center
+		position: relative
+		z-index: 20
+		p
+			font-size: 9px
+			line-height: 11px
+			text-transform: uppercase
+			color: #fff
+			a
+				color: #fff
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		&__1
+			padding-bottom: 71px
+			.steps
+				&-img
+					img,svg
+						max-width: 411px
+				&-info
+					padding-top: 30px
+				&-title
+					width: 205px
+					height: 54px
+					background: url(../img/btn-bg.svg)
+					background-size: 100% 100%
+		&__2
+			padding-left: 48px
+			padding-bottom: 106px
+			.steps
+				&-img
+					img,svg
+						max-width: 347px
+				&-info
+					padding-top: 102px
+					padding-left: 82px
+					transform: rotate(4deg)
+					p
+						max-width: 300px
+				&-title
+					width: 322px
+					height: 56px
+					background: url(../img/btn-bg-2.svg)
+					background-size: 100% 100%
+					margin-bottom: 1px
+				&-subtitle
+					margin-bottom: 20px
+		&__3
+			padding-left: 174px
+			.steps
+				&-img
+					margin-top: -74px
+					img,svg
+						max-width: 290px
+				&-info
+					padding-left: 10px
+					transform: rotate(-9deg)
+					p
+						max-width: 320px
+				&-title
+					width: 250px
+					height: 56px
+					background: url(../img/btn-bg-3.svg)
+				&-subtitle
+					max-width: 320px
+		&__4
+			margin-left: -20px
+			.steps
+				&-img
+					img,svg
+						max-width: 442px
+				&-info
+					padding-top: 30px
+					transform: rotate(4deg)
+				&-title
+					width: 242px
+					height: 56px
+					background: url(../img/btn-bg-4.svg)
+	&-img
+		img,svg
+			display: block
+	&-info
+		padding-left: 70px
+		transform: rotate(-4deg)
+	&-title
+		display: inline-block
+		text-align: center
+		white-space: nowrap
+		padding: 10px 5px 0
+		font-family: "ALBOROTO"
+		font-size: 40px
+		line-height: 1
+		font-weight: normal
+		color: #fff
+		text-transform: uppercase
+		margin: 0 0 10px -10px
+	&-subtitle
+		display: block
+		font-family: "ALBOROTO"
+		font-size: 24px
+		line-height: 28px
+		font-weight: normal
+		text-transform: uppercase
+		color: #fff
+	&-btn
+		position: relative
+		span
+			display: inline-block
+			font-family: "Helvetica"
+			font-size: 18px
+			line-height: 20px
+			color: #fff
+			padding: 13px 14px 17px
+			background: #00B8F1
+			border-radius: 0 30px 30px 30px
+			position: relative
+			z-index: 10
+		&::after
+			content: ''
+			position: absolute
+			top: -2px
+			left: 4px
+			width: 100%
+			height: 50px
+			background: #0B426C
+			border-radius: 30px
+	&-descr
+		padding-left: 57px
+		position: relative
+		margin-left: -5px
+		margin-bottom: 27px
+		&__subtitle,p
+			display: block
+			font-family: "Helvetica"
+			font-size: 18px
+			line-height: 1.2
+			color: #fff
+			padding-left: 14px
+		&__subtitle
+			font-weight: bold
+			margin: 0 0 3px
+		p
+			padding-bottom: 22px
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 50px
+			height: 50px
+			background-image: url("data:image/svg+xml,%3Csvg width='49' height='50' viewBox='0 0 49 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H24C37.8071 0 49 11.1929 49 25C49 38.8071 37.8071 50 24 50H23.1132C10.3481 50 0 39.6519 0 26.8868V0Z' fill='%2300B8F1'/%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+
+@media only screen and (max-width : 1280px)
+	.steps
+		padding-bottom: 400px
+		&-bg
+			&__2
+				bottom: 56px
+				left: 32px
+			&__3
+				bottom: 59px
+				right: 31px
+
+@media only screen and (max-width : 1150px)
+	.steps
+		&-bg
+			&__1
+				img,svg
+					max-width: 169px
+
+@media only screen and (max-width : 991px)
+	.steps
+		.hbWrapper
+			padding: 0 20px
+		&-item
+			padding-left: 0
+
+@media only screen and (max-width : 768px)
+	.steps
+		padding: 220px 0 197px
+		background-size: 100% 100%
+		background: none!important
+		&-mob
+			display: block
+		&-line
+			&__1
+				width: 464px
+				top: -70px
+			&__2
+				width: 396px
+				top: -70px
+				left: 138px
+				right: auto
+			&__3
+				top: -75px
+				right: 187px
+				width: 594px
+			&__4
+				width: 440px
+				top: -300px
+				left: 100px
+		&-bg
+			&__2
+				img,svg
+					max-width: 139px
+			&__3
+				img,svg
+					max-width: 129px
+		&-item
+			display: block
+			max-width: 323px
+			margin: 0 auto
+			&__1
+				padding-bottom: 100px
+				.steps
+					&-info
+						padding: 22px 0 0 50px
+			&__2
+				padding-bottom: 74px
+				.steps
+					&-info
+						padding: 30px 0 0
+			&__3
+				padding-bottom: 153px
+				.steps
+					&-info
+						padding: 0
+			&__4
+				.steps
+					&-img
+						margin-bottom: 13px
+						img,svg
+							max-width: 292px
+					&-info
+						padding: 0
+		&-descr
+			padding-left: 45px
+			margin: 0 0 29px
+			&__subtitle,p
+				font-size: 14px
+				line-height: 17px
+				padding-left: 10px
+			&::after
+				width: 38px
+				height: 38px
+		&-btn
+			span
+				font-size: 14px
+				line-height: 18px
+				padding: 8px 12px 12px
+			&::after
+				height: 38px
+				top: 0px
+		&-img
+			padding: 0
+			img,svg
+				width: 100%
+		&-info
+			padding: 0
+
+@media only screen and (max-width : 640px)
+	.main
+@media only screen and (max-width : 540px)
+	.main
+@media only screen and (max-width : 420px)
+	.main
+@media only screen and (max-width : 380px)
+	.main

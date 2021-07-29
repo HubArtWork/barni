@@ -1,0 +1,67 @@
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: rgba(#fff, 1)
+
+*:-moz-placeholder
+	color: rgba(#fff, 1)
+
+*::-moz-placeholder
+	color: rgba(#fff, 1)
+
+*:-ms-input-placeholder
+	color: rgba(#fff, 1)
+
+* 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	outline: none
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+html,body
+	//height: 100%
+	overflow-x: hidden
+	&.scroll-hidden
+		overflow: hidden
+
+body
+	font-family: 'MDLZ BITE TYPE'
+	//font-family: $OpenSans
+	//font-size: 16px
+	//line-height: 1.3
+	//color: #000
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	position: relative
+	display: flex
+	flex-direction: column
+	height: auto
+
+img
+	max-width: 100%
+	height: auto
+
+.hbWrapper
+	max-width: 1280px
+	margin: 0 auto
+	position: relative
+
+@import "components/general/icons"
+@import "components/general/buttons"
+@import "components/general/inputs-selects-check"
+@import "components/general/modals"
+@import "components/header"
+@import "components/main"
+@import "components/steps"
+@import "components/skills"
+@import "components/faq"
+@import "components/cookie"
+@import "components/footer"
+
+.tab
+	display: none
+	&.tab-active
+		display: block
+		
