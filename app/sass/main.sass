@@ -38,6 +38,10 @@ body
 	display: flex
 	flex-direction: column
 	height: auto
+	&.faqBody
+		background: rgba(56, 198, 244, 0.4)
+	&.cookieBody
+		background: #B6ECB6
 
 img
 	max-width: 100%
@@ -47,6 +51,28 @@ img
 	max-width: 1280px
 	margin: 0 auto
 	position: relative
+
+.page
+	&-title,&-subtitle
+		display: block
+		text-align: center
+		font-family: "ALBOROTO"
+		line-height: 1.2
+		font-weight: normal
+		text-transform: uppercase
+		color: #fff
+		position: relative
+		z-index: 20
+	&-title
+		font-size: 100px
+		margin: 0 0 34px
+	&-subtitle
+		max-width: 1000px
+		margin: 0 auto 60px
+		font-size: 80px
+
+.prize-item-info__btn
+	cursor: pointer
 
 @import "components/general/icons"
 @import "components/general/buttons"
@@ -58,10 +84,6 @@ img
 @import "components/skills"
 @import "components/faq"
 @import "components/cookie"
+@import "components/notFound"
+@import "components/product"
 @import "components/footer"
-
-.tab
-	display: none
-	&.tab-active
-		display: block
-		

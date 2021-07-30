@@ -1,20 +1,98 @@
 @import "vars"
 
 .cookie
-	
-@media only screen and (max-width : 1280px)
-	.main
-@media only screen and (max-width : 1150px)
-	.main
+	padding: 186px 0 208px
+	position: relative
+	overflow: hidden
+	&-mob
+		display: none
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 285px
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: cover
+	&-bg,&-img
+		position: absolute
+		img,svg
+			display: block
+	&-bg
+		top: 141px
+		right: 0
+	&-img
+		z-index: 20
+		&__1
+			bottom: 95px
+			left: 0
+		&__2
+			right: 110px
+			bottom: 98px
+	&-bottom,&-mob
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 580px
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: cover
+	&-wrap
+		max-width: 1286px
+		padding: 149px 106px 101px
+		margin: 0 auto
+		text-align: center
+		position: relative
+		z-index: 10
+		ul,p
+			font-family: "Helvetica"
+			font-size: 12px
+			line-height: 14px
+			color: #fff
+			padding-bottom: 14px
+		&__bg,&__bg-mob
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 100% 100%
+		&__bg-mob
+			display: none
+	&-info
+		position: relative
+		z-index: 20
+		max-width: 1068px
+		margin: 0 auto
+		text-align: left
+
+@media only screen and (max-width : 1800px)
+	.cookie
+		&-img
+			&__1
+				display: none
+			&__2
+				width: 320px
+				bottom: -95px
+				right: auto
+				left: 50%
+				transform: translate(-50%,0)
+
 @media only screen and (max-width : 991px)
-	.header
-@media only screen and (max-width : 768px)
-	.main
-@media only screen and (max-width : 640px)
-	.main
-@media only screen and (max-width : 540px)
-	.main
-@media only screen and (max-width : 420px)
-	.main
-@media only screen and (max-width : 380px)
-	.main
+	.page
+		&-subtitle
+			font-size: 50px
+			margin-bottom: 50px
+	.cookie
+		padding: 110px 0 210px
+		&-bg
+			display: none
+		&-wrap
+			padding: 83px 20px 75px
+			&__bg
+				display: none
+				&-mob
+					display: block

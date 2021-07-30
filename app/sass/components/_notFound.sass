@@ -1,0 +1,219 @@
+@import "vars"
+
+.notFound
+	overflow: hidden
+	&-img,&-bg,&-mob
+		position: absolute
+		img,svg
+			display: block
+	&-img
+		z-index: 5
+		&__1
+			bottom: 0
+			left: 0
+			img,svg
+				max-width: 726px
+		&__2
+			top: 124px
+			right: 121px
+		&__3
+			top: 216px
+			left: 56px
+	&-bg,&-mob
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	&-bg
+		width: 100%
+		height: 694px
+		left: 0
+		bottom: -323px
+	&-mob
+		width: 100%
+		height: 464px
+		left: 0
+		bottom: 0
+		display: none
+	&-wrap
+		min-height: 816px
+		max-width: 1400px
+		width: 100%
+		margin: 0 auto
+		padding: 230px 0 0 742px
+		position: relative
+	&-info
+		max-width: 300px
+		position: relative
+		z-index: 50
+	&-num
+		display: block
+		font-family: "ALBOROTO"
+		font-size: 200px
+		line-height: 0.7
+		font-weight: normal
+		color: #FFCB05
+		text-transform: uppercase
+		margin: 0 0 10px
+	&-title
+		display: block
+		font-size: 40px
+		line-height: 1.2
+		font-weight: normal
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 35px
+
+.drawing
+	background: #80C785
+	position: relative
+	overflow: hidden
+	&-wrap
+		min-height: 720px
+		text-align: center
+		padding: 186px 20px 100px
+	&-title
+		display: block
+		max-width: 700px
+		margin: 0 auto
+		font-family: "ALBOROTO"
+		font-size: 80px
+		line-height: 1.2
+		color: #fff
+		position: relative
+		z-index: 20
+	&-bg,&-mob,&-img,&-line
+		display: block
+		position: absolute
+		img,svg
+			display: block
+	&-bg,&-mob
+		width: 100%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	&-bg
+		height: 780px
+		bottom: -420px
+		background-position: center top
+	&-mob
+		display: none
+	&-img
+		z-index: 10
+		&__1
+			left: 236px
+			bottom: 205px
+			img,svg
+				max-width: 380px
+		&__2
+			bottom: -100px
+			right: 22px
+	&-line
+		top: 179px
+		left: 0
+		z-index: 5
+
+@media only screen and (max-width : 1800px)
+	.notFound
+		&-img
+			&__2
+				right: 0
+	.drawing
+		&-img
+			&__1
+				left: 10px
+			&__2
+				right: -100px
+
+@media only screen and (max-width : 1280px)
+	.notFound
+		&-wrap
+			min-height: 700px
+			padding: 180px 0 0 540px
+		&-img
+			&__1
+				img,svg
+					max-width: 520px
+			&__2,&__3
+				display: none
+	.drawing
+		&-img
+			&__1
+				bottom: 100px
+
+@media only screen and (max-width : 991px)
+	.notFound
+		&-img
+			&__1
+				img,svg
+					max-width: 420px
+		&-wrap
+			min-height: 600px
+			padding: 170px 0 0 450px
+		&-info
+			max-width: 260px
+		&-num
+			font-size: 150px
+		&-title
+			font-size: 26px
+			line-height: 31px
+			margin-bottom: 19px
+	.drawing
+		&-wrap
+			min-height: 603px
+			padding: 110px 0
+		&-title
+			font-size: 50px
+			max-width: 340px
+		&-bg
+			display: none
+		&-mob
+			display: block
+			height: 497px
+			bottom: -70px
+			background-position: center top
+		&-img
+			&__1
+				bottom: 214px
+				left: 37px
+				img,svg
+					max-width: 169px
+			&__2
+				bottom: -72px
+				right: -105px
+				img,svg
+					max-width: 435px
+		&-line
+			top: auto
+			bottom: 0
+			right: 0
+			transform: translate(-465px,0)
+			width: 1465px
+			height: 580px
+			img,svg
+				position: absolute
+				bottom: 0
+				right: 0
+
+@media only screen and (max-width : 768px)
+	.notFound
+		&-wrap
+			min-height: 695px
+			padding: 120px 0 315px
+		&-info
+			max-width: 400px
+			margin: 0 auto
+			text-align: center
+			.primary-btn
+				margin: 0 auto
+		&-img
+			&__1
+				bottom: -18px
+				left: -40px
+				img,svg
+					max-width: 377px
+		&-bg
+			display: none
+		&-mob
+			display: block
+			bottom: -20px
+			background-position: center bottom
