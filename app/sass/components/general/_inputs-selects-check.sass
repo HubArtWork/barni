@@ -153,6 +153,10 @@
 				display: none
 	div.error
 		display: none!important
+	.checkbox
+		input.success
+			& + .checkbox-ico + p
+				color: #f7941d
 	input.error
 		color: #F8A800
 		box-shadow: 0 0 0 1px #F8A800
@@ -164,3 +168,11 @@
 			color: rgba(#F8A800, 1)
 		&:-ms-input-placeholder
 			color: rgba(#F8A800, 1)
+
+.is-invalid .select2-container--default .select2-selection--single
+	color: #f7941d
+	border-color: #f7941d
+
+.input-block
+	label
+		display: none!important

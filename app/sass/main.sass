@@ -127,6 +127,44 @@ img
 			white-space: nowrap
 			width: 170px
 
+zxing-scanner
+	width: 213px!important
+	height: 213px!important
+	border: 2px solid #fff
+	border-radius: 10px
+	background-color: #fff
+	border-color: #fff!important
+	margin-bottom: 30px
+
+.popup.popup-uploading
+	button
+		max-width: 280px
+		width: 100%
+		font-size: 32px
+		margin-top: 27px
+	.select2.select2-container
+		max-width: 280px!important
+		width: 100%!important
+		height: 33px
+		border-radius: 20px
+		background-color: #fff
+	.select2-container .select2-selection--single
+		height: 33px
+		border-radius: 20px
+		background-color: #fff
+		border: none
+		padding: 8px 19px
+		font-size: 14px
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		line-height: 17px
+		color: #F7941D
+	.select2-container--default .select2-selection--single .select2-selection__arrow b
+		background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.78751 6L0.437086 -6.52532e-07L7.13794 -4.68497e-08L3.78751 6Z' fill='%23F7941D'/%3E%3C/svg%3E%0A")
+
+.menu
+	&-mob
+		display: none
+
 @media only screen and (max-width : 991px)
 	.winners
 		main
@@ -134,9 +172,65 @@ img
 		.content
 			&::before
 				display: none
+	.login-link
+		display: none!important
+	.menu
+		&-links
+			padding-bottom: 120px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 120px
+				background-image: url(../img/menu-bg-min.png)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 100% 100%
+		&-mob
+			display: block
+			max-width: 240px
+			margin: 0 auto
+			text-align: center
+			padding-top: 15px
+		&-item,&-goOut
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0
+			a
+				position: relative
+				margin: 0!important
+				.hb-ico
+					position: absolute
+					top: 50%
+					left: 0
+					transform: translate(0,-50%)
+		&-item
+			text-align: left
+			margin-bottom: 35px
+			a
+				display: inline-block
+				padding-left: 40px
+				font-size: 24px
+				line-height: 29px
+				color: #fff
+		&-goOut
+			a
+				display: inline-block
+				padding-left: 26px
+				font-family: "MDLZ BITE TYPE"
+				font-size: 16px
+				line-height: 1
+				color: #fff
 
 @media only screen and (max-width : 768px)
 	.winners
+		&-wrapper
+			max-height: 100%!important
+			height: 100%!important
 		main
 			padding-bottom: 180px
 		.content
