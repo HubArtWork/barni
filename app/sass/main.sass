@@ -127,45 +127,13 @@ img
 			white-space: nowrap
 			width: 170px
 
-zxing-scanner
-	width: 213px!important
-	height: 213px!important
-	border: 2px solid #fff
-	border-radius: 10px
-	background-color: #fff
-	border-color: #fff!important
-	margin-bottom: 30px
-
-.popup.popup-uploading
-	button
-		max-width: 280px
-		width: 100%
-		font-size: 32px
-		margin-top: 27px
-	.select2.select2-container
-		max-width: 280px!important
-		width: 100%!important
-		height: 33px
-		border-radius: 20px
-		background-color: #fff
-	.select2-container .select2-selection--single
-		height: 33px
-		border-radius: 20px
-		background-color: #fff
-		border: none
-		padding: 8px 19px
-		font-size: 14px
-	.select2-container--default .select2-selection--single .select2-selection__rendered
-		line-height: 17px
-		color: #F7941D
-	.select2-container--default .select2-selection--single .select2-selection__arrow b
-		background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.78751 6L0.437086 -6.52532e-07L7.13794 -4.68497e-08L3.78751 6Z' fill='%23F7941D'/%3E%3C/svg%3E%0A")
-
 .menu
 	&-mob
 		display: none
 
 @media only screen and (max-width : 991px)
+	.lk
+		padding-top: 110px
 	.winners
 		main
 			padding-top: 110px
@@ -254,6 +222,17 @@ zxing-scanner
 		.block
 			.container
 				background-size: 100% 100%
+	.anime-item
+		&:nth-child(even)
+			.anime-item
+				&-info
+					left: auto
+					right: 0
+		&-info
+			left: 0
+			max-width: 280px
+			width: 280px
+			transform: none
 
 @import "components/general/icons"
 @import "components/general/buttons"
