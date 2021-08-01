@@ -1,17 +1,263 @@
 @import "vars"
 
 .product
+	padding: 185px 0 60px
+	position: relative
+	.page-title
+		margin-bottom: 63px
+	&-bg,&-line
+		position: absolute
+		z-index: 20
+		pointer-events: none
+		img,svg
+			display: block
+		&__1
+			top: 284px
+			left: 0
+		&__2
+			top: 0
+			right: 0
+		&__3
+			min-width: 1816px
+			left: 50%
+			bottom: 634px
+			transform: translate(-50%,0)
+		&__4
+			bottom: 0
+			left: 0
+			width: 100%
+			z-index: 0
+		&__5
+			bottom: 51px
+			right: 80px
+			img,svg
+				max-width: 363px
+	&-line
+		min-width: 1920px
+		bottom: -292px
+		left: 50%
+		transform: translate(-50%,0)
+	&-wrap
+		max-width: 1282px
+		padding: 96px 50px 43px
+		margin: 0 auto
+		text-align: center
+		position: relative
+		z-index: 10
+		&__bg,&__bg-mob
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 100% 100%
+		&__bg-mob
+			display: none
+	&-all
+		position: relative
+		z-index: 30
+	&-row
+		display: flex
+		flex-flow: row wrap
+		margin: 0 -35px
+	&-top
+		border: 2px dashed #fff
+		border-radius: 32px
+		max-width: 635px
+		width: 100%
+		padding: 69px 20px 33px
+		margin: 0 auto 167px
+		position: relative
+		.product
+			&-row
+				justify-content: center
+			&-title
+				margin-bottom: 40px
+	&-title
+		display: block
+		width: 100%
+		font-family: "ALBOROTO"
+		font-size: 26px
+		line-height: 1
+		font-weight: normal
+		text-transform: uppercase
+		color: #F7941D
+		margin: 0 0 42px
+	&-text
+		position: absolute
+		left: 50%
+		transform: translate(-50%,-50%)
+		width: 438px
+		height: 56px
+		background-image: url("data:image/svg+xml,%3Csvg width='438' height='56' viewBox='0 0 438 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.367 10.853C28.367 10.853 7.40412 11.8419 7.27081 25.9279C7.1375 40.0138 -2.29415 49.7488 20.935 52.0342C44.1642 54.3196 111.685 52.4737 155.878 52.6934C200.07 52.9132 316.416 54.5613 342.011 54.6932C367.606 54.825 407.133 56.0995 418.831 52.8912C430.529 49.6828 439.927 39.9699 437.661 32.3665C435.394 24.7632 430.795 21.4889 426.196 17.1159C421.597 12.7429 412.332 7.29307 289.02 6.67777C165.709 6.06247 121.45 10.1938 95.855 10.0619C70.2596 9.97402 40.0316 7.66664 28.367 10.853Z' fill='%23003A23'/%3E%3Cpath d='M23.1014 4.23778C23.1014 4.23778 2.13849 5.22666 2.00518 19.3126C1.87187 33.3986 -7.55978 43.1335 15.6694 45.4189C38.8986 47.7043 106.42 45.8584 150.612 46.0782C194.804 46.2979 311.15 47.9461 336.745 48.0779C362.341 48.2098 401.867 49.4843 413.565 46.276C425.23 43.0896 434.661 33.3547 432.395 25.7513C430.129 18.148 425.53 14.8737 420.93 10.5007C416.331 6.12763 407.066 0.677833 283.755 0.062533C160.444 -0.552767 116.185 3.57853 90.5894 3.44668C64.9939 3.31483 34.766 1.05141 23.1014 4.23778Z' fill='%23F7941D'/%3E%3C/svg%3E%0A")
+		background-size: 100% 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: 'ALBOROTO'
+		font-size: 30px
+		line-height: 1
+		padding: 3px 10px 6px
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		cursor: pointer
+		z-index: 1
+		border: none
+		&__top
+			top: 0
+		&__bottom
+			bottom: 0
+			transform: translate(-50%,50%)
+	&-col
+		width: 33.333%
+		padding: 0 35px 43px
+		position: relative
+		z-index: 40
+		&__main
+			width: 50%
+			padding-bottom: 30px
+			.product
+				&-img
+					margin-bottom: 3px
+				&-name
+					max-width: 226px
+					margin: 0 auto 6px
+			&-last
+				width: 100%
+				margin-top: -5px
+				.product
+					&-img
+						margin-bottom: 5px
+						img,svg
+							max-width: 275px
+					&-name
+						max-width: 277px
+		&__big
+			.product
+				&-img
+					margin-left: 0
+					margin-bottom: 42px
+					img,svg
+						max-width: 242px
+		&__middle
+			padding-bottom: 40px
+			.product
+				&-img
+					margin-left: -30px
+					margin-bottom: 5px
+					img,svg
+						max-width: 100%
+						max-height: 131px
+				&-name
+					max-width: 256px
+		&__last
+			width: 100%
+			padding-bottom: 48px
+			.product
+				&-img
+					img,svg
+						max-width: 100%
+						max-height: 131px
+				&-name
+					max-width: 256px
+	&-item
+		text-align: center
+	&-img
+		margin-left: -25px
+		img,svg
+			display: block
+			max-width: 214px
+			margin: 0 auto
+	&-name,&-gram
+		display: block
+		font-family: "MDLZ BITE TYPE"
+		color: #fff
+		a
+			color: #fff
+	&-name
+		max-width: 220px
+		font-size: 14px
+		line-height: 17px
+		margin: 0 auto 6px
+	&-gram
+		font-size: 9px
+		line-height: 11px
+	&-bottom
+		.product
+			&-col
+				width: 100%
+				padding: 0
+				margin-top: -5px
+			&-img
+				margin: 0 0 17px
+				img,svg
+					max-width: 114px
+			&-name
+				max-width: 258px
+	&-mob
+		display: none
 
 @media only screen and (max-width : 1800px)
-	.main
+	.product
+		&-bg
+			&__1
+				left: -150px
+			&__2
+				right: -150px
+
+@media only screen and (max-width : 1450px)
+	.product
+		&-bg
+			&__1
+				left: -200px
+			&__2
+				right: -200px
+
 @media only screen and (max-width : 1280px)
-	.main
-@media only screen and (max-width : 1150px)
-	.main
+	.product
+		padding-bottom: 270px
+		&-bg
+			&__1,&__2,&__3,&__4
+				display: none
+			&__5
+				width: 363px
+				bottom: 14px
+				left: 50%
+				transform: translate(-50%,0)
+		&-line
+			display: none
+
 @media only screen and (max-width : 991px)
-	.header
+	.product
+		padding-top: 110px
+		.page-title
+			margin-bottom: 32px
+
 @media only screen and (max-width : 768px)
-	.main
+	.product
+		&-wrap
+			padding: 117px 20px 93px
+		&-top
+			padding: 78px 20px 24px
+			margin-bottom: 130px
+		&-text
+			font-size: 26px
+			background-image: url("data:image/svg+xml,%3Csvg width='321' height='55' viewBox='0 0 321 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.1365 11.1995C17.1365 11.1995 1.58632 12.1794 1.48743 26.1381C1.38854 40.0968 -5.6078 49.7438 11.6235 52.0085C28.8548 54.2733 78.9417 52.444 111.723 52.6618C144.505 52.8796 230.809 54.5128 249.796 54.6435C268.782 54.7741 298.103 56.0371 306.78 52.8578C315.458 49.6784 322.429 40.0533 320.748 32.5186C319.067 24.984 315.655 21.7393 312.244 17.4058C308.832 13.0723 301.959 7.67171 210.488 7.06197C119.016 6.45223 86.1852 10.5462 67.1987 10.4155C48.2121 10.3284 25.7892 8.04191 17.1365 11.1995Z' fill='%23003A23'/%3E%3Cpath d='M17.1365 4.19949C17.1365 4.19949 1.58632 5.17943 1.48744 19.1381C1.38855 33.0968 -5.60781 42.7438 11.6235 45.0085C28.8548 47.2733 78.9418 45.444 111.723 45.6618C144.505 45.8796 230.81 47.5128 249.796 47.6435C268.783 47.7741 298.103 49.0371 306.781 45.8578C315.434 42.7002 322.43 33.0533 320.749 25.5186C319.068 17.984 315.656 14.7393 312.245 10.4058C308.833 6.07226 301.96 0.671708 210.488 0.0619679C119.016 -0.547772 86.1854 3.5462 67.1988 3.41554C48.2122 3.28488 25.7893 1.04191 17.1365 4.19949Z' fill='%23F7941D'/%3E%3C/svg%3E%0A")
+		&-row
+			display: block
+			margin: 0
+		&-col
+			width: 100%
+			padding: 0 0 60px
+		&-title
+			&__second
+				margin: 30px 0 42px
+		&-mob
+			display: block
+
 @media only screen and (max-width : 640px)
 	.main
 @media only screen and (max-width : 540px)

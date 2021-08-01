@@ -3,6 +3,33 @@
 .faq
 	padding: 186px 0 245px
 	position: relative
+	form.error-form
+		.input-text
+			display: block
+	div.error
+		display: none!important
+	.checkbox
+		input.success
+			& + .checkbox-ico + p
+				color: #f7941d
+	.is-invalid
+		.select2
+			.select2-selection--single
+				color: #F8A800
+				box-shadow: 0 0 0 1px #F8A800
+			.select2-selection__placeholder
+				color: #F8A800
+	input.error,textarea.error
+		color: #F8A800
+		box-shadow: 0 0 0 1px #F8A800
+		&::-webkit-input-placeholder
+			color: rgba(#F8A800, 1)
+		&:-moz-placeholder
+			color: rgba(#F8A800, 1)
+		&::-moz-placeholder
+			color: rgba(#F8A800, 1)
+		&:-ms-input-placeholder
+			color: rgba(#F8A800, 1)
 	&-text
 		position: absolute
 		top: 50%
@@ -89,8 +116,11 @@
 		min-width: 360px
 		width: 360px
 		.input-block
-			input,select,textarea
+			input,select,textarea,.select2-container--default .select2-selection--single .select2-selection__placeholder
 				font-family: "RotondaC"
+				text-transform: none
+			.select2-container--default .select2-selection--single .select2-selection__placeholder
+				line-height: 20px
 		.primary-btn
 			margin: 28px auto 0
 	&-block
