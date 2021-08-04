@@ -249,6 +249,27 @@ iframe#iframe
 	.lk .block .container
 		background: url(../img/lk-bg-min.jpg)!important
 		background-size: 100% 100%!important
+	.checks
+		padding: 0 15px!important
+		&-block
+			padding-right: 3px
+			margin: 0 -12px
+
+@media only screen and (max-width : 380px)
+	.checks
+		table
+			td
+				padding-left: 8px
+				.image
+					min-width: 25px
+					width: 25px
+					height: 25px
+				&.count
+					min-width: 30px
+					width: 30px
+					padding-left: 0
+				&.status
+					padding-left: 0
 
 @import "components/general/icons"
 @import "components/general/buttons"
