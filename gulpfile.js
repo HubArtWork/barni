@@ -27,6 +27,9 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
+		'app/libs/jquery-3.5.1.min.js',
+		'app/libs/select2/select2.min.js',
+		'app/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js',
 		'app/libs/dropify.js',
 		'app/libs/jquery.inputmask.min.js',
 		'app/libs/jquery.validate.min.js',
