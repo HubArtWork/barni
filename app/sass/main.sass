@@ -139,6 +139,11 @@ iframe#iframe
 .checks-wrapper
 	overflow: hidden
 
+.winners-wrapper table.mobile
+	td
+		&:first-child
+			white-space: nowrap
+
 @media only screen and (max-width : 991px)
 	.lk
 		padding-top: 110px
@@ -254,6 +259,10 @@ iframe#iframe
 		&-block
 			padding-right: 3px
 			margin: 0 -12px
+	.winners-wrapper table.mobile
+		td
+			&:last-child
+				padding-right: 10px
 
 @media only screen and (max-width : 380px)
 	.checks
