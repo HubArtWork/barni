@@ -144,6 +144,42 @@ iframe#iframe
 		&:first-child
 			white-space: nowrap
 
+.anime
+	max-width: 810px
+	&-img
+		top: 120px
+		left: -120px
+	&-text
+		bottom: -70px
+		left: calc(-36px + -88px)
+	&-item
+		&.anime-item-mob
+			border: none
+			background: none!important
+		&.anime-item-second
+			.anime-item__img
+				margin-left: -11px
+				img,svg
+					max-width: 127px
+					height: 64px
+			.anime-item-info__img
+				display: flex
+				justify-content: center
+				align-items: flex-end
+				height: 165px
+				margin-left: -20px
+				img,svg
+					max-width: 213px
+	.anime-wrapper
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		grid-template-columns: repeat(4,1fr)
+	.anime-wrapper-second
+		max-width: 810px
+		grid-template-columns: repeat(4,1fr)
+		padding-bottom: 0
+
 @media only screen and (max-width : 991px)
 	.lk
 		padding-top: 110px
@@ -206,6 +242,15 @@ iframe#iframe
 				font-size: 16px
 				line-height: 1
 				color: #fff
+	.anime
+		.anime-wrapper-second
+			max-width: 598px
+			grid-template-columns: repeat(3,1fr)
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			.anime-item
+				margin: 0 auto
 
 @media only screen and (max-width : 768px)
 	.winners
@@ -235,6 +280,10 @@ iframe#iframe
 			max-height: 100%!important
 			height: 100%!important
 
+@media only screen and (max-width : 767px)
+	.anime
+		max-width: 300px
+
 @media only screen and (max-width : 540px)
 	.winners
 		.block
@@ -263,6 +312,14 @@ iframe#iframe
 		td
 			&:last-child
 				padding-right: 10px
+	.anime-item.anime-item-second
+		.anime-item-info
+			left: 50%
+			transform: translate(-50%,0)
+		.anime-item__img
+			img,svg
+				max-width: 100px
+				height: auto
 
 @media only screen and (max-width : 380px)
 	.checks
